@@ -20,7 +20,7 @@ def getAllTrackLinks(url):
 	for link in links:
 		all_track_links.append(link)
 
-	campaign_links = html.find_all('a', class_='tm-page-hero-control')
+	campaign_links = html.find_all('a', class_='tm-page-herocontrol')
 	campaign_links = [link.get('href') for link in campaign_links]
 
 	if  url != FIRST_CAMPAIGN_URL:
